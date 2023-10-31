@@ -1,0 +1,54 @@
+.all-pages{
+    margin: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+  /* Start slidbar  */
+  .slider-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    width: 300%;
+    transition: transform 1s;
+  }
+  
+  .slide {
+    flex: 1;
+    min-width: 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Auto-playing the slider */
+  .autoplay {
+    animation: slide 10s infinite;
+  }
+  
+  @keyframes slide {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    20%, 120% {
+      transform: translateX(-100%);
+    }
+    40%, 140% {
+      transform: translateX(-200%);
+    }
+  }
+
+
+
+
+  /* AND the slidbar */
